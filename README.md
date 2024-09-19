@@ -1,13 +1,20 @@
 # Vargeesh_10
-Youtube data harvesting and warehousing
+YOUTUBE DATAHARVESTING AND WAREHOUSING
+
 This project aims to extract data from a specific YouTube channel using its Channel ID and store the extracted data in a SQL database. The main objective is to facilitate data analysis and reporting by systematically organizing and storing the channel's data. This includes retrieving video details, statistics, and other relevant metadata to provide insights into the channel's performance and content trends.
 
-Features
+FEATURES :
+
 Channel Data Extraction: Fetch detailed information about videos from a specified YouTube channel using the Channel ID.
+
 Data Warehousing: Store the extracted data in a SQL database for efficient querying and analysis.
+
 Automated Data Pipeline: Set up an automated process to regularly update the database with the latest data from the channel.
+
 Data Analysis Ready: Organize the data in a structured format, making it easy to perform various data analysis tasks.
-Technologies Used
+
+TECHNOLOGIES USED:
+
 Python: The core programming language used for developing the data extraction and processing scripts.
 
 YouTube Data API v3: Utilized to fetch data from the YouTube channel. For accessing this API you have to install a python pacakge called 'google-api-python-client'
