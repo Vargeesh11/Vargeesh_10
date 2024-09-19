@@ -12,7 +12,7 @@ import re
 
 def Api_connect():
 
-    Api_key = "AIzaSyB_KFjSKF1LHRybiST1kxzLE3c0nxQoHso"
+    Api_key = "Your_APIkey"
     youtube = build("youtube", "v3", developerKey=Api_key)
     return youtube
 
@@ -228,10 +228,10 @@ def insert_youtube_data(channel_data, video_data, comment_data):
         print("Storing the Data in SQL Warehouse")
         
         mydb = mysql.connector.connect(
-                                host = "localhost",
-                                user = "root",
-                                password = "root",
-                                database = "youtube_test"
+                                host = "hostname",
+                                user = "username",
+                                password = "password",
+                                database = "schemaname"
                               )
 
         
@@ -360,10 +360,11 @@ elif show_table=="COMMENTS":
 # Query section    
 
 mydb = mysql.connector.connect(
-                                host = "localhost",
-                                user = "root",
-                                password = "root",
-                                database = "youtube_data"
+                                host = "hostname",
+                                user = "username",
+                                password = "password",
+                                database = "schemaname"
+                               
                               )
 
 query_options = [
